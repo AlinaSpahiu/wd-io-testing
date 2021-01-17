@@ -33,6 +33,12 @@ describe('Interacting with elements', function(){
     it("Is header in viewport?", ()=>{
         console.log('Is header displayed in viewpoer?', internetPage.pageHeader.isDisplayedInViewport())
     })
+    it("Is subheader enabled?", ()=>{
+        console.log("is subHeader enabled?", internetPage.subHeading.isEnabled())
+    })
+    it("Clicl Element", () => {
+        internetPage.clickOnLink()
+    })
 })
 
 
