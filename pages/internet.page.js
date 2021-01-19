@@ -13,7 +13,8 @@ class Internet {
     }
 
     getSpecificElementText(index){
-        console.log(this.specificChildElement(index).getText())
+        this.specificChildElement(index).waitForDisplayed()
+        return this.specificChildElement(index).getText()
     }
 
     clickOnLink(){
