@@ -1,28 +1,50 @@
 class Internet {
-    get pageHeader(){ return $('h1.heading') }
-    get subHeading(){ return $('h2')}
-    get pageFooter(){ return $('#page-footer')}
-    get parent() {return $('ul')}
-    get childElements() { return this.parent.$$('li')}
+    get pageHeader() {return $('h1.heading')}
+    get pageFooter() {return $("#page-footer")}
+    get ul() { return $('ul')}
+    get lis() {return this.ul.$$("li")}
+    //nese dojm me punu me index nuk munemi me e perdor get
+     specificLi(index){return this.ul.$(`li:nth-child(${index}) a`)}
+    get specificLink(){return $(`ul li:nth-child(1) a`)}
+    
+   
 
-    specificChildElement(index) {return this.parent.$(`li:nth-child(${index})`)}
-    get firstLink() { return $('ul li:nth-child(1) a')}
+   getPageHeader(){
+       this.pageHeader.getText();
+       console.log("merrHeader", this.pageHeader.getText());
+   }
 
-    getLiText(){
-        this.childElements.filter((element) => console.log(element.getText()))
+   getPageFooter(){
+    this.pageFooter.getText();
+    console.log("merrFooter", this.pageHeader.getText());
+   }
+
+    getAllLi(){
+        this.lis.length;
+        console.log("lengthi", this.lis.length);
+
+        this.lis.filter((element) => {
+            console.log('liiis', element.getText());
+         })
     }
 
-    getSpecificElementText(index){
-        this.specificChildElement(index).waitForDisplayed()
-        return this.specificChildElement(index).getText()
+    getspecificLi(index){
+        this.specificLi(index).waitForDisplayed()
+        return this.specificLi(index).getText();
+        browser.pause(3000);
     }
 
     clickOnLink(){
-     if ( this.firstLink.isDisplayed() === true) {
-         this.firstLink.click()
-     }
-     browser.pause(5000)
+       if (this.specificLink.isDisplayed() === true) {
+          return this.specificLink.click()
+       }
+       browser.pause(5000)
+    }
+
+    getIsDisplayed(index){
+        console.log(this.specificLink(index))
     }
 
 }
+
 module.exports = new Internet()
