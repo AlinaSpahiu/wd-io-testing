@@ -1,10 +1,22 @@
-// const { getPageHeader } = require('../pageobjects/Internet.page')
-// const internetPage = require('../pageobjects/Internet.page')
-// describe("Interacting with elements", () => {
-//     before(()=>{
-//         browser.url('/')
-//     })
-// // Get Text()
+const InternetPage = require('../pageobjects/internet.page')
+
+describe("Interacting with elements", () => {
+    before(()=>{
+        browser.url('/');
+    })
+
+//Get pageHeader
+ it('Get the text of header', () => {
+    InternetPage.getPageHeader();
+    InternetPage.getAllLi();
+ })
+
+
+
+
+
+
+
 //   xit('Get Text of header, footer, li', () =>{
 //       internetPage.getPageHeader();
 //       internetPage.getPageFooter();
@@ -28,5 +40,5 @@
 //      // console.log('pageHeader Clickable:', internetPage.getIsDisplayed(5).isClickable())
 //   })
 
-// })
+})
 
