@@ -13,7 +13,6 @@ class internetPage {
         this.pageFooter.getText();
         console.log("merrFooter", this.pageHeader.getText());
     }
-
     //get All li-s 
     get ul() { return $('ul') }
     get lis() { return this.ul.$$("li") }
