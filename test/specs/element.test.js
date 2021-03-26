@@ -13,10 +13,6 @@ describe("Interacting with elements", () => {
 
 
 
-
-
-
-
 //   xit('Get Text of header, footer, li', () =>{
 //       internetPage.getPageHeader();
 //       internetPage.getPageFooter();
