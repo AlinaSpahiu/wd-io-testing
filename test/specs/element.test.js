@@ -23,6 +23,7 @@ describe("Interacting with elements", () => {
 //     internetPage.clickOnLink(6);
 //     browser.pause(2000);
 //   })
+    
 //   // Element State
 //   xit('Element State', ()=>{
 //       console.log('pageHeader Displayed:', internetPage.pageHeader.isDisplayed())
