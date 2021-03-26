@@ -4,7 +4,6 @@ describe("Interacting with elements", () => {
     before(()=>{
         browser.url('/');
     })
-
 //Get pageHeader
  it('Get the text of header', () => {
     InternetPage.getPageHeader();
