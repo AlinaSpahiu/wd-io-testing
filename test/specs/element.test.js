@@ -31,6 +31,5 @@ describe("Interacting with elements", () => {
 //      // console.log('pageHeader Enabled:', internetPage.clickOnLink(4).isEnabled())
 //      // console.log('pageHeader Clickable:', internetPage.getIsDisplayed(5).isClickable())
 //   })
-
 })
 
