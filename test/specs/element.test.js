@@ -16,7 +16,6 @@ describe("Interacting with elements", () => {
 //       internetPage.getAllLi(); //getting length and text of all LI
 //       internetPage.getspecificLi(3);
 //   })
-
 //   xit("Click on link", ()=> {
 //     internetPage.clickOnLink(5);
 //     browser.url('/');
