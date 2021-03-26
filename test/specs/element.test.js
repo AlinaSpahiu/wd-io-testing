@@ -11,7 +11,6 @@ describe("Interacting with elements", () => {
     InternetPage.getAllLi();
  })
 
-
 //   xit('Get Text of header, footer, li', () =>{
 //       internetPage.getPageHeader();
 //       internetPage.getPageFooter();
