@@ -8,8 +8,7 @@ describe("Interacting with elements", () => {
  it('Get the text of header', () => {
     InternetPage.getPageHeader();
     InternetPage.getAllLi();
- })
-    
+ })   
 //   xit('Get Text of header, footer, li', () =>{
 //       internetPage.getPageHeader();
 //       internetPage.getPageFooter();
